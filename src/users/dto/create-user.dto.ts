@@ -1,5 +1,6 @@
 import { IsEmail, IsEnum, IsNotEmpty, IsString } from "class-validator"
-
+//DTO -> Objetos de transferencia de datos -> esquemas
+ 
 export class CreateUserDto {
     @IsString()
     @IsNotEmpty()

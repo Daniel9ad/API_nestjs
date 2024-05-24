@@ -11,7 +11,8 @@ export class AppController {
   }
 
   @Get('Hola')
-  getHola(): string {
-    return 'Hola mundo Daniel';
+  getHola(): any {
+    let tipo : any = typeof 1
+    return typeof tipo;
   }
 }

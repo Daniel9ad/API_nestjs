@@ -43,7 +43,7 @@ export class UsersController {
         return this.userService.update(id, updateUserDto)
     }
 
-    @Delete(':id') // Delete /users/:id -> delete
+    @Delete(':id') // DELETE /users/:id -> delete
     delete(@Param('id', ParseIntPipe) id: number){
         return this.userService.delete(id)
     }
