@@ -8,21 +8,25 @@ export class UsersService {
         {
             'id':1,
             'name':'daniel',
+            'email':'daniel@usfx.bo',
             'role':'ad'
         },
         {
             'id':2,
             'name':'daniel2',
+            'email':'daniel@usfx.bo',
             'role':'us'
         },
         {
             'id':3,
             'name':'daniel3',
+            'email':'daniel@usfx.bo',
             'role':'us'
         },
         {
             'id':4,
             'name':'daniel4',
+            'email':'daniel@usfx.bo',
             'role':'us'
         }
     ]
