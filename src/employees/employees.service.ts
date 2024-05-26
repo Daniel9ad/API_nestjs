@@ -37,7 +37,7 @@ export class EmployeesService {
       where: {
         id,
       },
-      data: UpdateUserDto
+      data: updateEmployeeDto
     })
   }
 
