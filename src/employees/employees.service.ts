@@ -3,7 +3,6 @@ import { Injectable } from '@nestjs/common';
 // import { UpdateEmployeeDto } from './dto/update-employee.dto';
 import { Prisma } from '@prisma/client';
 import { DatabaseService } from 'src/database/database.service';
-import { UpdateUserDto } from 'src/users/dto/update-user.dto';
 
 @Injectable()
 export class EmployeesService {
