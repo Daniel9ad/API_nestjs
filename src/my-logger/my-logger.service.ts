@@ -14,7 +14,7 @@ export class MyLoggerService extends ConsoleLogger{
         }).format(new Date())}\t${entry}\n`
 
         try {
-            if (fs.existsSync(path.join(__dirname, '..', '..', 'logs'))){
+            if (!fs.existsSync(path.join(__dirname, '..', '..', 'logs'))){
                 await fsPormises.mkdir(path.join(__dirname, '..', '..', 'logs'))
             }
             await fsPormises.appendFile(path.join(__dirname, '..', '..', 'logs', 'myLogFile.log'), formattedEntry)
