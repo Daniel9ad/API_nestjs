@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:14
+        image: postgres:13
         ports:
           - 5432:5432
         env:
@@ -44,9 +44,11 @@ jobs:
       - name: Run Prisma Migrations
         env:
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/testdb
+          DATABASE_URL_UNPOOLED: postgres://postgres:postgres@localhost:5432/testdb
         run: npx prisma migrate deploy
 
       - name: Run Tests
         env:
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/testdb
+          DATABASE_URL_UNPOOLED: postgres://postgres:postgres@localhost:5432/testdb
         run: npm run test
